@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/formularios.css" />
   </head>
-  
+
   <body>
     <!--
       Plantilla guía — Completá el markup según el frame «Añadir» de Figma.
@@ -38,16 +38,34 @@
         <!-- TODO: fieldset Poderes con 4 checkboxes -->
         <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
         <!-- TODO: botón <button type="submit">Añadir</button> -->
-        <p class="placeholder-copy">
-          Reemplazá este párrafo por el formulario completo respetando la jerarquía del diseño de
-          referencia.
-        </p>
+        <form method="post" action="#">
+          <h2>Añadí tu super!</h2>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+          <label for="nombre">*Nombre</label>
+          <input type="text" id="nombre" name="nombre">
+          <label for="especie">*Especie</label>
+          <input type="text" id="especie" name="especie">
+          <label for="fecha">Fecha</label> 
+          <input type="date" id="fecha" name="fecha">
+          <label for="foto">Agregar Foto</label> 
+          <input type="file" id="foto" name="foto">
+          <label for="descripcion">Descripcion</label>
+          <textarea id="descripcion" name="descripcion"></textarea>
+
+          <label for="poderes">poderes</label>
+
+          <label for="tipodepersonaje">tipo de personaje</label>
+          
+          <button type="submit">Añadir</button>
+
+        </form>
       </main>
 
       <footer class="site-footer">
         <p>Todos los derechos reservados - [TU NOMBRE Y APELLIDO]</p>
         <a href="https://github.com/" class="footer-github">GitHub</a>
       </footer>
+
     </div>
   </body>
 </html>
