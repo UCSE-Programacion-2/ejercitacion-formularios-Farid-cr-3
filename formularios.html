@@ -42,9 +42,14 @@
           <h2>Añadí tu super!</h2>
           <p>Agregá tu personaje favorito completando las opciones.</p>
           <label for="nombre">*Nombre</label>
-          <input type="text" id="nombre" name="nombre">
+          <input type="text" id="nombre" name="nombre" required>
           <label for="especie">*Especie</label>
-          <input type="text" id="especie" name="especie">
+          <select id="especie" name="especie" required>
+           <option value="">Seleccionar</option>
+           <option value="humano">Humano</option>
+           <option value="alienigena">Alienígena</option>
+           <option value="robot">Robot</option>
+          </select>
           <label for="fecha">Fecha</label> 
           <input type="date" id="fecha" name="fecha">
           <label for="foto">Agregar Foto</label> 
