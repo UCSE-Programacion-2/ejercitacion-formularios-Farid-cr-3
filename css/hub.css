@@ -71,7 +71,9 @@ a {
 
 .footer-github {
   font-weight: 700;
+  font-size: 50px;
   text-decoration: none;
+  
 }
 
 .footer-github:hover {
@@ -98,4 +100,68 @@ a {
 .fab-plus:focus-visible {
   outline: 3px solid #00669f;
   outline-offset: 3px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 760px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.hero-card {
+  background-color: #f3f3f3;
+  display: inline-block;
+  width: 300px;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid #ccc;
+  vertical-align: top;
+  position: relative;
+}
+
+.card-bg {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-top: -20px;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: -50px;
+}
+
+.hero-card h2 {
+  margin: 10px 0;
+}
+
+.hero-card p {
+  min-height: 90px;
+}
+
+.hero-card button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  background-color: #00669f;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.heart {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: red;
+  font-size: 35px;
 }
