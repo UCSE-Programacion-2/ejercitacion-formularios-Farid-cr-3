@@ -12,11 +12,9 @@
     />
     <link rel="stylesheet" href="css/formularios.css" />
   </head>
+
   <body>
-    <!--
-      Plantilla guía — Completá el markup según el frame «Añadir» de Figma.
-      Recordá: los tests automáticos sólo miran este archivo y css/formularios.css.
-    -->
+    
     <div class="page-shell">
       <div class="top-bar">Descuentos 20%</div>
 
@@ -31,22 +29,68 @@
       </nav>
 
       <main class="page-main">
-        <!-- TODO: envolver el formulario en <form method="post" action="#"> -->
-        <!-- TODO: título «Añadí tu super!» y texto guía de la maqueta -->
-        <!-- TODO: campos Nombre (*), Especie (*), Fecha, Foto, Descripción -->
-        <!-- TODO: fieldset Poderes con 4 checkboxes -->
-        <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
-        <!-- TODO: botón <button type="submit">Añadir</button> -->
-        <p class="placeholder-copy">
-          Reemplazá este párrafo por el formulario completo respetando la jerarquía del diseño de
-          referencia.
-        </p>
+       
+        <form method="post" action="#">
+          <h2>Añadí tu super!</h2>
+          <p>Agregá tu personaje favorito completando las opciones.</p>
+
+          <div class="campo">
+            <label for="nombre">*Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="especie">*Especie</label>
+            <select id="especie" name="especie" required>
+              <option value="">Especie</option>
+              <option value="humano">Humano</option>
+              <option value="alienigena">Alienígena</option>
+              <option value="robot">Robot</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha">
+          </div>
+
+          <div class="campo">
+            <label for="foto">Agregar Foto</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+          </div>
+
+          <div class="campo descripcion">
+            <label for="descripcion"></label>
+            <textarea id="descripcion" name="descripcion" placeholder="Descripción"></textarea>
+          </div>
+
+          <div class="opciones">
+            <fieldset>
+              <legend>Poderes</legend>
+
+              <label><input type="checkbox" name="poderes" value="volar"> Volar</label>
+              <label><input type="checkbox" name="poderes" value="superinteligencia"> SuperInteligencia</label>
+              <label><input type="checkbox" name="poderes" value="rayolaser"> Vista de rayo láser</label>
+              <label><input type="checkbox" name="poderes" value="billetera"> Billetera gorda</label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Tipo de personaje</legend>
+
+              <label><input type="radio" name="tipo-personaje" value="heroe"> Héroe / Heroína</label>
+              <label><input type="radio" name="tipo-personaje" value="villano"> Villano / Villana</label>
+            </fieldset>
+          </div>
+
+          <button type="submit">Añadir</button>
+      </form>
       </main>
 
       <footer class="site-footer">
-        <p>Todos los derechos reservados - [TU NOMBRE Y APELLIDO]</p>
+        <p>Todos los derechos reservados - Marcos Farid Garnica</p>
         <a href="https://github.com/" class="footer-github">GitHub</a>
       </footer>
+
     </div>
   </body>
 </html>
