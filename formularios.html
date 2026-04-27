@@ -39,10 +39,13 @@
         <!-- TODO: fieldset Tipo de personaje con radios name="tipo-personaje" -->
         <!-- TODO: botón <button type="submit">Añadir</button> -->
         <form method="post" action="#">
+
           <h2>Añadí tu super!</h2>
           <p>Agregá tu personaje favorito completando las opciones.</p>
+
           <label for="nombre">*Nombre</label>
           <input type="text" id="nombre" name="nombre" required>
+
           <label for="especie">*Especie</label>
           <select id="especie" name="especie" required>
            <option value="">Seleccionar</option>
@@ -50,10 +53,13 @@
            <option value="alienigena">Alienígena</option>
            <option value="robot">Robot</option>
           </select>
+
           <label for="fecha">Fecha</label> 
           <input type="date" id="fecha" name="fecha">
+
           <label for="foto">Agregar Foto</label> 
           <input type="file" id="foto" name="foto" accept="image/*">
+          
           <label for="descripcion">Descripción</label>
           <textarea id="descripcion" name="descripcion"></textarea>
 
@@ -93,7 +99,7 @@
             </label>
           
           </fieldset>
-          
+
           <button type="submit">Añadir</button>
 
         </form>
